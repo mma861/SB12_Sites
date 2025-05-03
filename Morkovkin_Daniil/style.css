@@ -43,6 +43,26 @@ float: center;
  width: 500px; 
 }
 
+.pic {
+    float: left;
+    width: 350px;
+    text-align: center;
+/*     padding: 1px; */
+    border: 4px double #FF0000;
+    margin: 30px 40px 30px 60px;
+    background-color: #A9A9A9;
+}
+.pic img{
+  width: 350px;
+}
+
+.pics{
+
+    padding-left: 5%;
+    text-align: center;
+  background-color: #FF4500;
+
+}
 
 
 
