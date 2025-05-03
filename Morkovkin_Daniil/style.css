@@ -1,0 +1,50 @@
+header h1 {
+  text-align: center;
+}
+
+header h3 {
+  text-align: center;
+  width: 300px;
+  margin-left: 740px;
+}
+
+h2 {
+  text-align: center;
+  width: 650px;
+  margin-left: 550px;
+}
+ol li {
+  margin-left: 680px;
+}
+
+.product {
+    float: left;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border: 5px double orange;
+    margin: 40px 15px 60px 100px;
+  background-color: SpringGreen;
+}
+.catalog {
+    padding-left: 15%;
+    text-align: center;
+  background-color: #FF4500;
+}
+header,main,body{
+  background-color: rgb(205, 255, 255);
+}
+
+.karttina {
+float: center;
+ padding: 0px; 
+ border: 3px double #FF4500;
+ margin-left: 40%;
+ width: 500px; 
+}
+
+
+
+
+
+      
