@@ -1,0 +1,76 @@
+body, footer {
+  background-color: ;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 239, 253);
+}
+h2 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: rgb(217, 195, 215);
+    height: 30px;
+}
+
+footer {
+    /* background: linear-gradient(to bottom right, #fafafa, #eaeaea); */
+    padding: 20px;
+    text-align: center;
+    /* box-shadow: 0 -5px 10px rgba(156, 23, 23, 0.1); */
+    border-top: 1px solid #ddd;
+    background-color: rgb(217, 195, 215);
+}
+
+
+h3 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 40px;
+        background-color: rgb(217, 195, 215);
+}
+
+h1 {
+  background-color: #bd584b;
+  color: white;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.hover-underline {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
