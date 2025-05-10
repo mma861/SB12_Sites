@@ -56,6 +56,10 @@ header{
 }
 footer {
     float: right;
+width:100%
+}
+footer p {
+text-align: right;
 }
 
 .imgTwo {
