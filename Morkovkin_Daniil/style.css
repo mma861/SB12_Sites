@@ -67,7 +67,10 @@ float: center;
 .curs {
    background-color: #78E700;
 }
-
+ol {
+  font-size:  25px;
+  font-family: Arial;
+}
 
 
 
