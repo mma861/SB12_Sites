@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b13bff;
+    background-image: url('bg-pattern.svg');
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+header h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Эффект перелива цвета */
+
+
+body {
+    background-color: rgb(240, 31, 240);
+    animation: changeColor 3s infinite alternate ease-in-out;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: rgb(240, 31, 240);
+    }
+
+    100% {
+        background-color: rgb(20, 194, 112);
+    }
+}

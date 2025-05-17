@@ -1,0 +1,129 @@
+.adin {
+    background-color: #bdbdbd;
+    height: 400px;
+}
+
+.dev {
+    color: red;
+    float: left;
+    width: 60%;
+    height: 320px;
+}
+.dev2 {
+    color: red;
+    float: left;
+    width: 60%;
+    height: 320px;
+}
+
+.dev h1{
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    border: 5px double orange;
+    background-color: bisque;
+    color: red;
+    font-size: 80px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.dev2 h1{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: 5px double orange;
+    background-color: bisque;
+    color: red;
+    font-size: 80px;
+    float: left;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+.dev5 h1{
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    border: 5px double orange;
+    background-color: bisque;
+    color: red;
+    font-size: 80px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.dev2 {
+    float: left;
+    width: 30%;
+    margin-left: 18px;
+}
+
+.bio{
+    float: left;
+}
+
+.dev2 p {
+    height: 320px;
+    width: 320px;
+    text-align: center;
+    padding: 10px;
+    border: 5px double green;
+    background-color: lightblue;
+}
+.dev3 p {
+    height: 320px;
+    width: 260px;
+    text-align: center;
+    padding: 10px;
+    border: 5px double green;
+    margin-left: 2%;
+    float: left;
+    background-color: lightblue;
+}
+.dev4 p {
+    height: 320px;
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+    border: 5px double green;
+    margin-left: 2%;
+    float: left;
+    background-color: lightblue;
+}
+
+.body,
+h1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: 5px double orange;
+    background-color: bisque;
+    color: red;
+
+}
+
+.body,
+h3 {
+    width: 410px;
+    text-align: center;
+    padding: 10px;
+    border: 5px double green;
+    background-color: lightblue;
+}
+
+body {
+    background-color: rgb(5, 55);
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+}
+.iner{
+    float: left;
+    width: 100%;
+}
+.iner h1 {
+    width: 100%;
+}
+.info {
+    margin-left: 36%;
+}
