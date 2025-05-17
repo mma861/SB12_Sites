@@ -77,3 +77,8 @@ ol {
 .address{
   margin-left: 4%;
 }
+.pic p {
+  font-size: 18px;
+  font-family: Arial;
+  font-style: italic;
+}
