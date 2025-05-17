@@ -1,5 +1,4 @@
 body, footer {
-  background-color: ;
     max-width: 800px;
     margin: auto;
     font-family: Arial, sans-serif;
@@ -7,7 +6,7 @@ body, footer {
     background-color: rgb(255, 239, 253);
 }
 h2 {
-    font-size: 24px;
+    font-size: 30px;
     color: #444;
     margin-top: 40px;
     font-weight: bold;
@@ -15,7 +14,7 @@ h2 {
     margin-bottom: 20px;
     position: relative;
     background-color: rgb(217, 195, 215);
-    height: 30px;
+    height: 36px;
 }
 
 footer {

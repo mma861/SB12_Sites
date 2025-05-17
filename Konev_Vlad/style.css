@@ -15,7 +15,7 @@ body {
     color: rgba(177, 10, 10, 0.904);
     font-size: 40px;
     background-color: rgb(177, 177, 177);
-    
+
     font-family: txt;
 }
 
@@ -24,7 +24,6 @@ body {
     color: rgba(177, 10, 10, 0.904);
     font-size: 40px;
     font-family: txt;
-    background-color: rgb(177, 177, 177);
 }
 
 
@@ -34,39 +33,48 @@ p img {
 }
 
 footer {
-    background-color:  rgba(92, 92, 92, 0.603);
-    color: rgb(0, 0, 0);
-     font-family: impact;
-}
-
-header{
     background-color: rgba(92, 92, 92, 0.603);
-     font-family: impact;
+    color: rgb(0, 0, 0);
+    font-family: impact;
+    float: right;
+    width: 100%;
 }
 
-.first{
+footer p {
+    float: right;
+}
+
+header {
+    background-color: rgba(92, 92, 92, 0.603);
+    font-family: impact;
+    height: 130px;
+}
+
+.first {
     float: left;
-     width: 100%;
+    width: 100%;
 }
 
-.two{
+.two {
     float: left;
     width: 60%;
 }
 
-.imgOne{
+.imgOne {
     float: right;
-     border: 5px double red;
+    border: 5px double red;
 }
-footer {
-    float: right;
-}
+
 
 .imgTwo {
     float: right;
     width: 70%;
-    color: rgba(226, 16, 16, 0.904);
+    color: rgb(151, 0, 0);
     background-color: rgb(100, 100, 100);
+    font-size: 18px;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: center;
 }
 
 .logo {
@@ -74,10 +82,10 @@ footer {
 }
 
 .logo_text {
-color: rgba(177, 10, 10, 0.897);
+    color: rgba(177, 10, 10, 0.897);
 }
 
-.three{
+.three {
     float: left;
     width: 80%;
 }
