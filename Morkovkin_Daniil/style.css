@@ -5,16 +5,16 @@ header h1 {
 header h3 {
   text-align: center;
   width: 300px;
-  margin-left: 740px;
+  margin-left: 40%;
 }
 
 h2 {
   text-align: center;
   width: 650px;
-  margin-left: 550px;
+  margin-left: 29%;
 }
 ol li {
-  margin-left: 680px;
+  margin-left: 36%;
 }
 
 .product {
@@ -39,7 +39,7 @@ header,main,body{
 float: center;
  padding: 0px; 
  border: 3px double #FF4500;
- margin-left: 40%;
+ margin-left: 34%;
  width: 500px; 
 }
 
@@ -71,7 +71,9 @@ ol {
   font-size:  25px;
   font-family: Arial;
 }
-
-
-
-      
+.problems ol{
+  font-size: 18px;
+}
+.address{
+  margin-left: 4%;
+}
