@@ -26,7 +26,6 @@ body {
     font-family: txt;
 }
 
-
 p img {
     width: 250px;
     margin: 15px;
@@ -64,7 +63,6 @@ header {
     float: right;
     border: 5px double red;
 }
-
 
 .imgTwo {
     float: right;

@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>DK Мeнеджер</title>
-    <link rel="icon" href="./images/logo.png" />
-  </head>
-  <body>
-    <header>
-      <img src="./images/logo.png" />
-      <img style="float: right; width: 80px" src="./images/User.png" />
-      <a href="./index.html"><h1>DK Мессенджер</h1></a>
-    </header>
-    <div class="chat-container">
-      <div class="chat-messages" id="chatMessages">
-        <div class="message received">Привет!</div>
-      </div>
-      <div class="chat-input">
-        <input type="text" id="messageInput" placeholder="Введи сообщение..." />
-        <button id="sendButton">Отправить</button>
-      </div>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <title>DK Мeнеджер</title>
+  <link rel="icon" href="./images/logo.png" />
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.png" />
+    <img style="float: right; width: 80px" src="./images/User.png" />
+    <a href="./index.html">
+      <h1>DK Мессенджер</h1>
+    </a>
+  </header>
+  <div class="chat-container">
+    <div class="chat-messages" id="chatMessages">
+      <div class="message received">Привет!</div>
     </div>
-    <script>
-      const chatMessages = document.getElementById("chatMessages");
-      const messageInput = document.getElementById("messageInput");
-      const sendButton = document.getElementById("sendButton");
+    <div class="chat-input">
+      <input type="text" id="messageInput" placeholder="Введи сообщение..." />
+      <button id="sendButton">Отправить</button>
+    </div>
+  </div>
+  <script>
+    const chatMessages = document.getElementById("chatMessages");
+    const messageInput = document.getElementById("messageInput");
+    const sendButton = document.getElementById("sendButton");
 
-      // Сценарий чата (вопрос => ответ)
-      const chatScenario = {
-        Здарова: "чо как дела?",
-        "Всё норм, а у тебя?": "Всё отлично братан",
-        "Давай сегодня погуляем?": "Давай в 3 часа, а то я щас на даче.",
-        "Ок, а чо ты там делаешь?": "Бабушке помогаю.",
-        "Ну тогда удачи.": "Спасибо, тебе тоже!",
-        Пока: "Покеда!",
-      };
+    // вопросы ответы
+    const chatScenario = {
+      Здарова: "чо как дела?",
+      "Всё норм, а у тебя?": "Всё отлично братан",
+      "Давай сегодня погуляем?": "Давай в 3 часа, а то я щас на даче.",
+      "Ок, а чо ты там делаешь?": "Бабушке помогаю.",
+      "Ну тогда удачи.": "Спасибо, тебе тоже!",
+      Пока: "Покеда!",
+    };
 
-      sendButton.addEventListener("click", function () {
-        const message = messageInput.value.trim();
-        if (message !== "") {
-          addMessage("sent", message);
+    sendButton.addEventListener("click", function () {
+      const message = messageInput.value.trim();
+      if (message !== "") {
+        addMessage("sent", message);
 
-          // Ищем ответ в сценарии
-          let response = chatScenario[message];
+        // поиск ответа в списке
+        let response = chatScenario[message];
 
-          // Если нет ответа в сценарии, даем дефолтный ответ
-          if (!response) {
-            response = "Я даже незнаю что ответить";
-          }
-
-          // Добавляем ответ в чат
-          setTimeout(() => {
-            addMessage("received", response);
-          }, 500);
-
-          messageInput.value = "";
+        // если ответа нет то выводим
+        if (!response) {
+          response = "Я даже незнаю что ответить";
         }
-      });
 
-      function addMessage(type, text) {
-        const messageDiv = document.createElement("div");
-        messageDiv.classList.add("message", type);
-        messageDiv.textContent = text;
-        chatMessages.appendChild(messageDiv);
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+        // ответ в чат
+        setTimeout(() => {
+          addMessage("received", response);
+        }, 500);
+
+        messageInput.value = "";
       }
+    });
 
-      // Обработка нажатия Enter в поле ввода
-      messageInput.addEventListener("keyup", function (event) {
-        if (event.key === "Enter") {
-          sendButton.click();
-        }
-      });
-    </script>
-  </body>
+    function addMessage(type, text) {
+      const messageDiv = document.createElement("div");
+      messageDiv.classList.add("message", type);
+      messageDiv.textContent = text;
+      chatMessages.appendChild(messageDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // обработка кнопки enter
+    messageInput.addEventListener("keyup", function (event) {
+      if (event.key === "Enter") {
+        sendButton.click();
+      }
+    });
+  </script>
+</body>
+
 </html>
